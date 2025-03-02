@@ -10,7 +10,7 @@ const app = express();
 
 app.use("/api/v1/auth", authRouter);
 app.use("/api/v1/users", userRouter);
-app.use("/api/v1/subsciptions", subscriptionRouter);
+app.use("/api/v1/subscriptions", subscriptionRouter);
 
 app.get("/", (req, res) => {
   res.send("Welcome to the subscription service");
